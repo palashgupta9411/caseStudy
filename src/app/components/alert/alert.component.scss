@@ -1,0 +1,18 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border :1px solid black ;
+    text-align: center;
+    margin: 5% 0;
+    button{
+     width: 50px;
+     border-radius: 8px;
+     padding: 6px;
+     background: beige;
+     border: 1px solid grey;
+     cursor: pointer;
+    }
+}
+.applyStyle{
+    margin-top: 50%;
+}

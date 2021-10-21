@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <span class="leftside">
+            <app-count-down [timeLimit]="timeLimit" (paused)="setPauseArray($event)" [startCount]="startCount" [pausedCount] = "pausedCount"></app-count-down>
+        </span>
+        <span class="rightside">
+            <app-time-limit (action)="setTimeLimit($event)" [pausedArray]="pausedArray"></app-time-limit>
+        </span>
+    </div >
+    <div class="row">
+        <span>
+            <app-logging [log]="logArr"></app-logging>
+
+        </span>
+        <span>
+            <app-counter [pausedCount] = "pausedCount" [startCount]="startCount"></app-counter>
+        </span>
+    </div>
+</div>

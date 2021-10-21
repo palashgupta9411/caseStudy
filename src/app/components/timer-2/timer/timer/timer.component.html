@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <span class="leftside">
+            <app-count-down [timeLimit]="timeLimit"  [startCount]="startCount" [pausedCount] = "pausedCount"></app-count-down>
+        </span>
+        <span class="rightside">
+            <app-time-limit ></app-time-limit>
+        </span>
+    </div >
+    <div class="row">
+        <span>
+            <app-logging ></app-logging>
+        </span>
+        <span>
+            <app-counter></app-counter>
+        </span>
+    </div>
+</div>

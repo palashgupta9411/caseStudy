@@ -1,0 +1,23 @@
+
+.alignRight{
+    float: right;
+    .fa{
+        cursor: pointer;
+        padding: 2px;
+        background: #efb27e;
+    }
+    .dropdown{
+        margin: 0 20px;
+    }
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .itemBox{
+        height:100px;
+        border :1px solid black;
+        margin :10px 0;
+    }
+}

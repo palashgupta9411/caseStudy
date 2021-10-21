@@ -1,0 +1,14 @@
+<div>
+    <span>
+        <h3>Enter Time Limit</h3>
+        <input type="text"  [(ngModel)]="timeLimit" appNumbersOnly/>
+    </span>
+  
+    <div>
+        <button (click)="!start ? startCounter() : pauseTimer()">Start/Pause</button>
+        <button (click)="resetTimer()">Reset</button>
+    </div>
+    <div *ngFor="let item of pausedArray">
+        <p *ngIf="item && item !=0">Paused At {{item}} </p> 
+    </div>
+</div>

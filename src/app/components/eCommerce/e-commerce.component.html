@@ -1,0 +1,29 @@
+<div class="alignRight">
+    <span>
+        <i class="fa fa-list" (click)="viewType = 'list'"></i>
+    </span>
+    <span>
+        <i class="fa fa-th" (click)="viewType = 'grid'"></i>
+    </span>
+    <span class="dropdown"> 
+        <select>
+            <option> >=100</option>
+            <option>
+                100 to 1000 
+            </option>
+            <option>
+                1000 to 10000
+            </option>
+            <option>
+                10000 to 100000
+            </option>
+        </select>
+    </span>
+</div>
+<div class="container">
+    <div  [ngStyle]="{'width': viewType == 'grid' ? '24%' : '49%'}"class="itemBox" *ngFor="let item of itemArray">
+        <div><strong>{{item.name}}</strong></div>
+        <div>{{item.price}}</div>
+        <div>{{item.productId}}</div>
+    </div>
+</div>

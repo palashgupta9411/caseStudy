@@ -1,0 +1,12 @@
+<table class="my-table">
+    <thead class="headers">
+      <tr>
+        <th *ngFor="let header of studentsJson.studentsTableHeader" (click)="sortData(header)">{{header}}</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <tr  *ngFor="let row of studentsJson.studentsData">
+        <td *ngFor="let column of studentsJson.studentsTableHeader">{{row[column]}}</td>
+      </tr>
+    </tbody>
+  </table>
